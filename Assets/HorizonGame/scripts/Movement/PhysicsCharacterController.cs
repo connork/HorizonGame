@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class PhysicsCharacterController : MonoBehaviour {
+public class PhysicsCharacterController : BaseCharacterController {
     Rigidbody phys;
 
     public float forwardMultiplier = 10;
