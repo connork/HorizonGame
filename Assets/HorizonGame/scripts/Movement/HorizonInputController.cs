@@ -33,6 +33,7 @@ public class HorizonInputController : MonoBehaviour {
 
         obj = (GameObject)GameObject.Instantiate(currentMode.movementObject, startPoint.position, startPoint.rotation);
         gameObject.GetComponent<SmoothFollow>().target = obj.transform;
+        obj.GetComponent<BaseCharacterController>().setInputController(this);
 	}
 	
 	// Update is called once per frame
@@ -46,13 +47,13 @@ public class HorizonInputController : MonoBehaviour {
     public void ChangeMode(HorizonMovementMode mode)
     {
        
-
         Transform currentLocation = obj.transform;
 
         GameObject.Destroy(obj);
 
         obj = (GameObject)GameObject.Instantiate(mode.movementObject, currentLocation.position, currentLocation.rotation);
         gameObject.GetComponent<SmoothFollow>().target = obj.transform;
+        obj.GetComponent<BaseCharacterController>().setInputController(this);
 
         currentMode = mode;
     }

@@ -6,7 +6,7 @@ public class BaseCharacterController : MonoBehaviour {
     protected HorizonInputController inputController = null;
 
 
-    protected void setInputController(HorizonInputController controller)
+    public void setInputController(HorizonInputController controller)
     {
         this.inputController = controller;
     }

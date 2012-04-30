@@ -15,8 +15,8 @@ public class PhysicsCharacterController : BaseCharacterController {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 movement = new Vector3(Input.GetAxis("Vertical") * forwardMultiplier, 0, -Input.GetAxis("Horizontal") * horizontalMultiplier);
-       
+        Vector3 movement = new Vector3(inputController.getMovementVector().x * forwardMultiplier, 0, inputController.getMovementVector().z * horizontalMultiplier);
+ 
         UpdateMovement(movement);
 
 	}
