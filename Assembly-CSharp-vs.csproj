@@ -49,6 +49,7 @@
      <Compile Include="Assets\HorizonGame\scripts\Movement\PhysicsCharacterController.cs" />
      <Compile Include="Assets\HorizonGame\scripts\Movement\WalkingCharacterController.cs" />
      <Compile Include="Assets\HorizonGame\scripts\Objects\WindPressureVolume.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\Triggers\ChangeLevelTrigger.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>

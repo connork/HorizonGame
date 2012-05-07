@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PhysicsCharacterController : BaseCharacterController {
     Rigidbody phys;
+    float maxmimumRollChangeVelocity = 10.0f;
 
     public float forwardMultiplier = 10;
     public float horizontalMultiplier = 10;
@@ -26,5 +27,14 @@ public class PhysicsCharacterController : BaseCharacterController {
         phys.AddTorque(input, forceMode);
        
         
+    }
+
+    public override bool CanChangeMode()
+    {
+        if (phys.velocity.magnitude >= maxmimumRollChangeVelocity)
+        {
+            return false;
+        }
+        return true;
     }
 }

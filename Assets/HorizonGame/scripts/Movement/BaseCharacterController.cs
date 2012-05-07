@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class BaseCharacterController : MonoBehaviour {
+public abstract class BaseCharacterController : MonoBehaviour {
 
     protected HorizonInputController inputController = null;
 
@@ -20,4 +20,6 @@ public class BaseCharacterController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+    public abstract bool CanChangeMode();
 }
