@@ -12,12 +12,13 @@ public class PhysicsCharacterController : BaseCharacterController {
 	// Use this for initialization
 	void Start () {
         phys = gameObject.rigidbody;
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
         Vector3 movement = new Vector3(inputController.getMovementVector().x * forwardMultiplier, 0, inputController.getMovementVector().z * horizontalMultiplier);
- 
+        movement = Camera.main.transform.TransformDirection(movement);
         UpdateMovement(movement);
 
 	}
