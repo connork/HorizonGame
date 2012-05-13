@@ -51,6 +51,7 @@
      <Compile Include="Assets\HorizonGame\scripts\Triggers\ChangeLevelTrigger.cs" />
      <Compile Include="Assets\HorizonGame\scripts\Triggers\WindPressureVolume.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
