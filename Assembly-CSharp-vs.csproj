@@ -37,23 +37,25 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HorizonGame\scripts\Movement\BaseCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Movement\HorizonInputController.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Movement\PhysicsCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Movement\WalkingCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Triggers\ChangeLevelTrigger.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Triggers\WindPressureVolume.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\HUDScript.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\MainMenuScript.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Movement\BaseCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Movement\HorizonInputController.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Movement\PhysicsCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Movement\WalkingCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Triggers\ChangeLevelTrigger.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Triggers\WindPressureVolume.cs" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
- <Reference Include="Library\ScriptAssemblies\Assembly-UnityScript-firstpass">
+ <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
   </ItemGroup>
