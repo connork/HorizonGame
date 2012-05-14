@@ -7,6 +7,8 @@ Project("{2BC17F1C-5CD9-2E64-95CD-93B040689F80}") = "HorizonGame", "Assembly-CSh
 EndProject
 Project("{2BC17F1C-5CD9-2E64-95CD-93B040689F80}") = "HorizonGame", "Assembly-UnityScript-firstpass.unityproj", "{AE53B964-345E-EE48-3929-61C3A1364C58}"
 EndProject
+Project("{2BC17F1C-5CD9-2E64-95CD-93B040689F80}") = "HorizonGame", "Assembly-UnityScript.unityproj", "{AFCDC547-5066-29B8-6078-A912FAB9C157}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,15 @@ Global
 		{AE53B964-345E-EE48-3929-61C3A1364C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE53B964-345E-EE48-3929-61C3A1364C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE53B964-345E-EE48-3929-61C3A1364C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCDC547-5066-29B8-6078-A912FAB9C157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCDC547-5066-29B8-6078-A912FAB9C157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCDC547-5066-29B8-6078-A912FAB9C157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCDC547-5066-29B8-6078-A912FAB9C157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																												GlobalSection(MonoDevelopProperties) = preSolution
+																															GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

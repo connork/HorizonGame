@@ -50,6 +50,7 @@
      <Compile Include="Assets\HorizonGame\scripts\Movement\WalkingCharacterController.cs" />
      <Compile Include="Assets\HorizonGame\scripts\Triggers\ChangeLevelTrigger.cs" />
      <Compile Include="Assets\HorizonGame\scripts\Triggers\WindPressureVolume.cs" />
+     <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
   </ItemGroup>
