@@ -103,6 +103,11 @@ public class HorizonInputController : MonoBehaviour {
         return movementVector;
     }
 
+    public bool GetJump()
+    {
+        return Input.GetButton("Jump");
+    }
+
 
     public void HandleMouseMovement()
     {

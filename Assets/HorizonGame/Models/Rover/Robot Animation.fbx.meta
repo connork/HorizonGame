@@ -43,7 +43,7 @@ ModelImporter:
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 1
+    materialSearch: 2
   animations:
     generateAnimations: 3
     bakeSimulation: 0
@@ -294,6 +294,13 @@ ModelImporter:
       data:
         first: 4
         second: b41a0600
+    lb:
+      data:
+        first: 1
+        second: a8860100
+      data:
+        first: 4
+        second: 881a0600
     lb1:
       data:
         first: 1
@@ -322,6 +329,13 @@ ModelImporter:
       data:
         first: 4
         second: dc1a0600
+    lf:
+      data:
+        first: 1
+        second: a6860100
+      data:
+        first: 4
+        second: 861a0600
     lf1:
       data:
         first: 1
@@ -392,6 +406,13 @@ ModelImporter:
       data:
         first: 4
         second: b81a0600
+    rb:
+      data:
+        first: 1
+        second: a2860100
+      data:
+        first: 4
+        second: 821a0600
     rb1:
       data:
         first: 1
@@ -413,6 +434,13 @@ ModelImporter:
       data:
         first: 4
         second: d01a0600
+    rf:
+      data:
+        first: 1
+        second: a4860100
+      data:
+        first: 4
+        second: 841a0600
     rf1:
       data:
         first: 1
