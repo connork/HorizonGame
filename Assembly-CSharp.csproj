@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{1AB02BD4-1A55-9D6A-E244-601B89E83363}</ProjectGuid>
+	<ProjectGuid>{B9B1C430-2798-FF06-2D78-3D0C22FB02F9}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -44,21 +44,23 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HorizonGame\Scripts\Movement\BaseCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\Scripts\Movement\HorizonInputController.cs" />
-     <Compile Include="Assets\HorizonGame\Scripts\Movement\PhysicsCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\Scripts\Movement\WalkingCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\Scripts\Triggers\ChangeLevelTrigger.cs" />
-     <Compile Include="Assets\HorizonGame\Scripts\Triggers\WindPressureVolume.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\HUDScript.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\MainMenuScript.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\Movement\BaseCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\Movement\HorizonInputController.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\Movement\PhysicsCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\Movement\WalkingCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\Triggers\ChangeLevelTrigger.cs" />
+     <Compile Include="Assets\HorizonGame\scripts\Triggers\WindPressureVolume.cs" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{D2802D94-ED5B-4F1E-F5D9-173A6FCB18FB}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{9C217FCC-3DF2-05ED-D81D-A52A05A952B2}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{AE53B964-345E-EE48-3929-61C3A1364C58}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+      <Project>{23CC15AD-A3BD-EBF2-8AAD-0F236C7DF7BC}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
