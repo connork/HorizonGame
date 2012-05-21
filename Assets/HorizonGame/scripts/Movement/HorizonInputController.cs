@@ -8,8 +8,8 @@ public class HorizonMovementMode
 {
     public GameObject movementObject;
     public String buttonName;
-    
-
+    public float cameraDistance = 10;
+    public bool hideModel = false;
 }
 
 
@@ -26,7 +26,9 @@ public class HorizonInputController : MonoBehaviour {
 
     private Vector2 lastMouse = Vector2.zero;
 
-    public int followDistance = 10;
+    private float followDistance = 10;
+    private float targetDistance = 10;
+    private float previousDistance = 10;
 
     public float xSpeed = 250.0f;
     public float ySpeed = 120.0f;
@@ -41,15 +43,21 @@ public class HorizonInputController : MonoBehaviour {
 
     GameObject obj;
 
+    bool changingCamera = false;
+
+    public AnimationCurve FollowGraph = new AnimationCurve();
+    public float ChangeTime = 2.0f;
+    private float changeTimer = 2.0f;
+
 	// Use this for initialization
 	void Start () {
         currentMode = MovementModes[0];
-
+        targetDistance = currentMode.cameraDistance;
         obj = (GameObject)GameObject.Instantiate(currentMode.movementObject, startPoint.position, startPoint.rotation);
         followTarget = obj.transform;
         //gameObject.GetComponent<SmoothFollow>().target = obj.transform;
         obj.GetComponent<BaseCharacterController>().setInputController(this);
-
+        followDistance = currentMode.cameraDistance;
         lastMouse = new Vector2(Screen.width / 2, Screen.height / 2);
 
         x = transform.eulerAngles.x;
@@ -59,7 +67,27 @@ public class HorizonInputController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (changingCamera)
+        {
+            changeTimer -= Time.deltaTime;
+            float dt = 1.0f;
+            if (changeTimer >= 0)
+            {
+                dt = (ChangeTime - changeTimer) / ChangeTime;
 
+            }
+            else
+            {
+                changingCamera = false;
+                if (currentMode.hideModel)
+                {
+                    obj.GetComponentInChildren<Renderer>().enabled = false;
+                }
+            }
+            followDistance = Mathf.Lerp(previousDistance, targetDistance, FollowGraph.Evaluate(dt));
+
+
+        }
         movementVector = new Vector3(Input.GetAxis("Vertical"), 0, -Input.GetAxis("Horizontal"));
 
         HandleKeypress();
@@ -78,8 +106,14 @@ public class HorizonInputController : MonoBehaviour {
         obj = (GameObject)GameObject.Instantiate(mode.movementObject, currentLocation.position, currentLocation.rotation);
         followTarget = obj.transform;
         obj.GetComponent<BaseCharacterController>().setInputController(this);
-
+        previousDistance = currentMode.cameraDistance;
+       
         currentMode = mode;
+        targetDistance = currentMode.cameraDistance;
+
+        changeTimer = ChangeTime;
+        changingCamera = true;
+
     }
 
     public void HandleKeypress()
