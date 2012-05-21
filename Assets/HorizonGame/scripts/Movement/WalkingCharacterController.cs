@@ -186,7 +186,8 @@ public class WalkingCharacterController : BaseCharacterController {
     }
 
     private void UpdateFunction () {
-        inputMoveDirection = inputController.getMovementVector();
+        inputMoveDirection = new Vector3(-inputController.getMovementVector().z, 0, inputController.getMovementVector().x);
+        inputMoveDirection = Camera.mainCamera.transform.TransformDirection(inputMoveDirection);
         inputJump = inputController.GetJump();
 
 	    // We copy the actual velocity into a temporary variable that we can manipulate.
