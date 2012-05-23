@@ -44,6 +44,7 @@ public class HorizonInputController : MonoBehaviour {
     GameObject obj;
 
     bool changingCamera = false;
+    bool fadingIn = false;
 
     public AnimationCurve FollowGraph = new AnimationCurve();
     public float ChangeTime = 2.0f;
@@ -85,7 +86,18 @@ public class HorizonInputController : MonoBehaviour {
                 }
             }
             followDistance = Mathf.Lerp(previousDistance, targetDistance, FollowGraph.Evaluate(dt));
-
+            if (currentMode.hideModel || fadingIn)
+            {
+                Renderer r = obj.GetComponentInChildren<Renderer>();
+                foreach (Material mat in r.materials)
+                {
+                    Color ocol = mat.color;
+                    float d = (currentMode.hideModel) ? 1 - FollowGraph.Evaluate(dt) : FollowGraph.Evaluate(dt);
+                    mat.color = new Color(ocol.r, ocol.g, ocol.b, d);
+                    
+                }
+            }
+       
 
         }
         movementVector = new Vector3(Input.GetAxis("Vertical"), 0, -Input.GetAxis("Horizontal"));
@@ -107,7 +119,7 @@ public class HorizonInputController : MonoBehaviour {
         followTarget = obj.transform;
         obj.GetComponent<BaseCharacterController>().setInputController(this);
         previousDistance = currentMode.cameraDistance;
-       
+        fadingIn = currentMode.hideModel;
         currentMode = mode;
         targetDistance = currentMode.cameraDistance;
 
