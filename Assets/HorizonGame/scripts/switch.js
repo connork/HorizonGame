@@ -1,3 +1,3 @@
 function OnTriggerEnter(other : Collider) {
-    GameObject.Find("Rising Platform").gameObject.animation.Play();
+    GameObject.Find("Platform3").gameObject.animation.Play("rise");
 }
