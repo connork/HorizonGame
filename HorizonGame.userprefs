@@ -1,9 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\HorizonGame\scripts\switch.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\HorizonGame\Scripts\switch.js">
     <Files>
-      <File FileName="Assets\HorizonGame\scripts\switch.js" Line="1" Column="1" />
-      <File FileName="Assets\HorizonGame\scripts\riseAnimations.js" Line="1" Column="1" />
+      <File FileName="Assets\HorizonGame\Scripts\switch.js" Line="6" Column="5" />
+      <File FileName="Assets\HorizonGame\Scripts\riseAnimations.js" Line="11" Column="24" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,12 +1,12 @@
 private var done = false;
 
 function Update () {
-    //if(!animation.isPlaying && !done){
-        playNextAnimation();
-    //    done = true;
-   // }
+    if(animation.isPlaying && !done)
+        done = true;
+    if(!animation.isPlaying && done)
+    	playNextAnimation();
 }
 
 function playNextAnimation(){
-    animation.Play("FloatingPlatform3");
+    animation.CrossFade("FloatingPlatform3");
 }
