@@ -1,10 +1,10 @@
 private var done = false;
 
 function Update () {
-    if(!animation.isPlaying && !done){
+    //if(!animation.isPlaying && !done){
         playNextAnimation();
-        done = true;
-    }
+    //    done = true;
+   // }
 }
 
 function playNextAnimation(){
