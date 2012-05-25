@@ -44,14 +44,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HorizonGame\scripts\HUDScript.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\MainMenuScript.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Movement\BaseCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Movement\HorizonInputController.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Movement\PhysicsCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Movement\WalkingCharacterController.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Triggers\ChangeLevelTrigger.cs" />
-     <Compile Include="Assets\HorizonGame\scripts\Triggers\WindPressureVolume.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\HUDScript.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\MainMenuScript.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Movement\BaseCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Movement\HorizonInputController.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Movement\PhysicsCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Movement\WalkingCharacterController.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Triggers\ChangeLevelTrigger.cs" />
+     <Compile Include="Assets\HorizonGame\Scripts\Triggers\WindPressureVolume.cs" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
