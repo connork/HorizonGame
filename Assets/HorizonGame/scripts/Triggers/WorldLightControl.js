@@ -3,6 +3,8 @@
 var worldLightOn = false;
 var ambientColorDark : Color = Color( 0.15, 0.15, 0.25, 1.0 );
 var ambientColorBright : Color = Color( 0.2, 0.2, 0.2, 1.0 );
+var skyboxMaterialDark : Material;
+var skyboxMaterialBright : Material;
 var sunlightColorDark : Color = Color( 0.6, 0.6, 1.0, 1.0 );
 var sunlightColorBright : Color = Color( 1.0, 1.0, 1.0, 1.0 );
 var sunlightIntensityDark : float = 0.2;
@@ -20,12 +22,14 @@ function Start () {
 	var sunlight : GameObject = GameObject.Find("Sunlight");
 	if( worldLightOn ){
 		RenderSettings.ambientLight = ambientColorBright;
+		RenderSettings.skybox = skyboxMaterialBright;
 		sunlight.light.color = sunlightColorBright;
 		sunlight.light.intensity = sunlightIntensityBright;
 	}
 	else
 	{
 		RenderSettings.ambientLight = ambientColorDark;
+		RenderSettings.skybox = skyboxMaterialDark;
 		sunlight.light.color = sunlightColorDark;
 		sunlight.light.intensity = sunlightIntensityDark;
 	}
@@ -36,12 +40,14 @@ function Update () {
 		var sunlight : GameObject = GameObject.Find("Sunlight");
 		if( worldLightOn ){
 			RenderSettings.ambientLight = ambientColorBright;
+			RenderSettings.skybox = skyboxMaterialBright;
 			sunlight.light.color = sunlightColorBright;
 			sunlight.light.intensity = sunlightIntensityBright;
 		}
 		else
 		{
 			RenderSettings.ambientLight = ambientColorDark;
+			RenderSettings.skybox = skyboxMaterialDark;
 			sunlight.light.color = sunlightColorDark;
 			sunlight.light.intensity = sunlightIntensityDark;
 		}

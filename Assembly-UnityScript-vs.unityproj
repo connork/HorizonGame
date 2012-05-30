@@ -50,6 +50,7 @@
      <Compile Include="Assets\HorizonGame\Particle Systems\Assets\Shooting Stars Assets\Shooting Stars Follow Script.js" />
      <Compile Include="Assets\HorizonGame\Particle Systems\Assets\Tornado Assets\Tornado Script.js" />
      <Compile Include="Assets\HorizonGame\Particle Systems\Assets\Twinkling Stars Assets\Twinkling Stars Follow Script.js" />
+     <Compile Include="Assets\HorizonGame\scripts\4thPlatformActivateAnim.js" />
      <Compile Include="Assets\HorizonGame\scripts\Triggers\WorldLightActivator.js" />
      <Compile Include="Assets\HorizonGame\scripts\Triggers\WorldLightControl.js" />
      <Compile Include="Assets\HorizonGame\scripts\riseAnimations.js" />
@@ -57,6 +58,7 @@
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\Standard Assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\HorizonGame\scripts\switch (Autosaved).txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
